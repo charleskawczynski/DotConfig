@@ -1,0 +1,44 @@
+[user]
+name = Charles Kawczynski
+email = kawczynski.charles@gmail.com
+
+[github]
+user = charleskawczynski
+
+
+[url "git@github.com:"]
+insteadOf = gh:
+
+[url "git@github.com:charleskawczynski/"]
+insteadOf = ghme:
+
+[core]
+excludesfile = ~/etc/git/exclude
+attributesfiles = ~/etc/git/attributes
+editor = vim
+	autocrlf = input
+
+[color]
+ui = true
+
+[alias]
+co = checkout
+st = status
+sh = status --short --branch
+cm = commit
+ci = commit
+br = branch
+conflicts = diff --name-only --diff-filter=U
+
+commend = commit --amend --no-edit
+fpush = push --force-with-lease
+
+unadd = reset HEAD
+uncommit = reset --soft HEAD~1 
+diffw = diff --word-diff
+last = log -1 HEAD
+
+list-alias = "!git config -l | grep alias | cut -c 7-"
+
+[push]
+default = current
