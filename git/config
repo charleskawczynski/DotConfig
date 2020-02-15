@@ -16,7 +16,7 @@ insteadOf = ghme:
 excludesfile = ~/etc/git/exclude
 attributesfiles = ~/etc/git/attributes
 editor = vim
-	autocrlf = input
+autocrlf = input
 
 [color]
 ui = true
@@ -34,7 +34,7 @@ commend = commit --amend --no-edit
 fpush = push --force-with-lease
 
 unadd = reset HEAD
-uncommit = reset --soft HEAD~1 
+uncommit = reset --soft HEAD~1
 diffw = diff --word-diff
 last = log -1 HEAD
 
